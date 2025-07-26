@@ -1,0 +1,36 @@
+# Cloud-optimized requirements for NBA data scraping
+# Minimal dependencies for cost-effective cloud deployment
+
+# Core scraping dependencies
+beautifulsoup4==4.12.2
+requests==2.31.0
+lxml==4.9.3
+
+# Database and data processing
+pandas==2.1.4
+sqlalchemy==2.0.23
+
+# Async scraping (reduced for cloud)
+aiohttp==3.9.1
+asyncio-throttle==1.0.2
+
+# Browser automation (headless only for cloud)
+playwright==1.40.0
+
+# Logging and configuration
+loguru==0.7.2
+pydantic==2.5.2
+
+# Optional: Data compression for cloud storage
+# gzip (built-in)
+# json (built-in)
+
+# Optional: System monitoring
+psutil==5.9.6
+
+# Optional: Database optimization
+# sqlite3 (built-in)
+
+# Development dependencies (optional)
+# pytest==7.4.3
+# black==23.11.0 

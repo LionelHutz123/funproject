@@ -1,3 +1,5 @@
+# Remove trust in compromised emSign intermediates.
+certifi>=2026.10.19
 beautifulsoup4==4.12.2
 pandas==2.1.4
 playwright==1.40.0

@@ -1,3 +1,5 @@
+# Remove trust in compromised emSign intermediates.
+certifi>=2026.10.19
 # Cloud-optimized requirements for NBA data scraping
 # Minimal dependencies for cost-effective cloud deployment
 

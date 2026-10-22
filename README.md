@@ -166,4 +166,15 @@ For issues and questions:
 
 - [Google Colab](https://colab.research.google.com/)
 - [GitHub Repository](https://github.com/yourusername/nba-data-scraping)
-- [Cloud Deployment Guide](cloud_deployment_guide.md) 
+- [Cloud Deployment Guide](cloud_deployment_guide.md)
+
+### Certificate trust update (October 2026)
+
+Use `certifi>=2026.10.19` and `pip>=26.2.2` in every Python environment.
+Existing virtual environments and packaged applications are not updated by a
+Git pull. Bootstrap pip using the hash-verified wheel in the
+[Python security notice](https://discuss.python.org/t/information-for-python-users-regarding-emudhra-emsign-ca-certificate-security-incident/109576),
+then upgrade certifi. If using uv, require version 0.13.4 or newer.
+Rebuild containers with `--pull --no-cache` and current OS CA packages; restart
+long-running clients through the project's deployment procedure. Do not disable
+TLS verification or use pip `--trusted-host` to work around certificate errors.
